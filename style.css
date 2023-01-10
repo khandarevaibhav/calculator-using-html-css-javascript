@@ -8,11 +8,14 @@ body{
     user-select: none;
     background: #87CEEB;
 }
+.buttons{
+background-color: #000000;
+}
 .container{
     margin-left: 1.4em;
     padding: 30px; /*space betn content and border*/
     border-radius: 6px;
-    box-shadow: 20px 20px 20px #454545, -15px -15px 20px #454545;
+    box-shadow: 15px 15px 20px #454545, -15px -15px 20px #454545;
     background-color: #cbced1;
 }
 .content{
@@ -23,7 +26,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.column button{
+.row button{
     width: 60px;
     height: 30px;
     font-size: 16px;
@@ -32,9 +35,9 @@ body{
     cursor: pointer;
     box-shadow: 5px 5px 8px #00000020 -5px -5px 8px #fff;
 }
-.column button:hover {
+.row button:hover {
     box-shadow: inset 5px 5px 8px rgba(54, 54, 53, 0.1),
-        inset -10px -20px 8px #fff; /* top right botto*/
+        inset -5px -5px 8px #fff; /* top right bottom*/
     background: #fff;
 }
 
@@ -45,20 +48,42 @@ body{
     height: 50px;
     font-size: 35px;
     outline: none;
-    border: none;
+    border: 4px solid black;
+    align-items: center;
     text-align: right;
-    padding-right: .2em;
-    background: #ecf0f3;
+    padding-right: .3em;
+    background: #c2e1c2;
     border-radius: 6px;
     box-shadow: inset 8px 8px 8px #cbced1,
-        inset -8px -8px 8px #ffffff;
+        inset -5px -5px 6px #ffffff;
 }
-#history{
-    width: 150px;
-    height:400px;
-    font-size: 1.1em;
-    box-sizing: border-box;
-    /* top right bottom and left*/
-    padding: 10px 10px 75px 25px;
-    overflow: scroll;
+/* to apply css to id we use #*/
+#del{
+    background-color: #e60e0e;
+    color: white;
 }
+#del:hover{
+    /* inset positive px is upper and negative is lower side*/
+    box-shadow: inset 5px 5px 8px #ce0c0c, 
+    inset -5px -5px 8px #dc5f5f;
+}
+
+#ac{
+    background-color: #e60e0e;
+    color: white;
+}
+#ac:hover{
+    /* inset positive px is upper and negative is lower side*/
+    box-shadow: inset 5px 5px 8px #ce0c0c, 
+    inset -5px -5px 8px #dc5f5f;
+}
+#eval{
+    background-color: #ff3399;
+    color: white;
+
+}
+#eval:hover{
+    box-shadow: inset 5px 5px 8px #e932ac, 
+    inset -5px -5px 8px #dd0d9f;
+}
+
