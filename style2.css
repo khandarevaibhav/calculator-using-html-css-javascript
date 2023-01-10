@@ -1,0 +1,55 @@
+body{
+    padding: 0px; 
+    margin: 0px;
+    display: flex; /* Exact middle */
+    justify-content: center ; 
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: #87CEEB;
+}
+.container{
+    margin-left: 1.4em;
+    padding: 30px; /*space betn content and border*/
+    border-radius: 6px;
+    box-shadow: 20px 20px 20px #454545, -15px -15px 20px #454545;
+    background-color: #cbced1;
+}
+.content{
+    width: 100%; /* if we want to fill any remaining space inside its parent*/
+    margin-top: 1.7em; /*28px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.column button{
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: .1s;
+    cursor: pointer;
+    box-shadow: 5px 5px 8px #00000020 -5px -5px 8px #fff;
+}
+.column button:hover {
+    box-shadow: inset 5px 5px 8px rgba(54, 54, 53, 0.1),
+        inset -10px -20px 8px #fff; /* top right botto*/
+    background: #fff;
+}
+
+
+.display #screen {
+    margin-bottom: .5em;
+    width: auto;
+    height: 50px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .2em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
